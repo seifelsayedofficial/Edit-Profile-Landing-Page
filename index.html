@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS Styles-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- First Bar Left-->
+    <div class="icon-bar">
+        <div class="icon-logo">
+            <img src="images/logo@0 1.png" alt="logo">
+        </div>
+        <ul class="bar-icon">
+            <li><i class="fa-regular fa-house icon"></i></li>
+            <li><i class="fa-regular fa-bell icon"></i></li>
+            <li><i class="fa-regular fa-calendar icon"></i></li>
+            <li><i class="fa-solid fa-chart-line icon"></i></li>
+            <li><i class="fa-regular fa-user icon"></i></li>
+        </ul>
+        <div class="icon-bottom">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+    </div>
+    <!-- Second Bar Middle-->
+    <div class="setting-bar">
+        <div class="setting-logo">
+            <i class="fa-solid fa-angle-left"></i>
+            <h2>settings</h2>
+        </div>
+        <ul class="setting-icon">
+            <li class="active"><i class="fa-solid fa-pencil active"></i> Edit profile</li>
+            <li><i class="fa-solid fa-bell"></i> Notification</li>
+            <li><i class="fa-solid fa-lock"></i> Security</li>
+            <li><i class="fa-solid fa-gear"></i> Appearance</li>
+            <li><i class="fa-regular fa-circle-question"></i> Help</li>
+        </ul>
+    </div>
+    <!-- Third Bar Right -->
+    <div class="profile-container">
+        <div class="profile-small-icon">
+            <i class="fa-regular fa-bell"></i>
+            <img src="images/unsplash_C8Ta0gwPbQg (1).png" alt="unsplash_C8Ta0gwPbQg">
+        </div>
+        <div class="profile-title">
+            <h2>Edit profile</h2>
+            <img src="images/unsplash_C8Ta0gwPbQg.png" alt="unsplash_C8Ta0gwPbQg">
+        </div>
+
+        <form method="get" class="form">
+            <div class="name-container">
+                <div class="first-name">
+                    <label for="first">First Name</label>
+                    <input type="text" name="first" id="first" placeholder="Mehrab" required>
+                </div>
+                <div class="last-name">
+                    <label for="last">Last Name</label>
+                    <input type="text" name="last" id="last" placeholder="Bozorgi" required>
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <div class="inputs">
+                        <input type="email" name="email" id="email" placeholder="Mehrabbozorgi.business@gmail.com"
+                            required>
+                        <input type="checkbox" name="emailchecked" id="emailchecked" checked>
+                    </div>
+                </div>
+                <div class="addresse">
+                    <label for="addresse">Addresse</label>
+                    <div class="inputs">
+                        <input type="text" name="addresse" id="addresse" placeholder="33062 Zboncak isle" required>
+                    </div>
+                </div>
+                <div class="contact">
+                    <label for="contact">Contac Number</label>
+                    <div class="inputs">
+                        <input type="tel" name="contact" id="contact" placeholder="58077.79" required>
+                    </div>
+                </div>
+                <div class="mehrab">
+                    <label for="mehrab">City</label>
+                    <select class="mehrab" id="mehrab">
+                        <option value="Mehrab" selected>Mehrab</option>
+                    </select>
+                </div>
+                <div class="bozorgi">
+                    <label for="bozorgi">State</label>
+                    <select class="bozorgi" id="bozorgi">
+                        <option value="Bozorgi" selected>Bozorgi</option>
+                    </select>
+                </div>
+                <div class="password">
+                    <label for="password">Password</label>
+                    <div class="inputs">
+                        <input type="password" name="password" id="password" placeholder="sbdfbnd65sfdvb s" required>
+                        <input type="checkbox" name="passchecked" id="passchecked" checked>
+                    </div>
+                </div>
+                <div class="btns">
+                    <button type="reset">Cancel</button>
+                    <button type="submit">Save</button>
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>
